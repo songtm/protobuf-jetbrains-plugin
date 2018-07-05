@@ -1,4 +1,5 @@
 // Generated from /Users/songtianming/Documents/dev/proj/protobuf-jetbrains-plugin/src/main/ProtoLexer.g4 by ANTLR 4.7
+package io.protostuff.jetbrains.plugin;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
