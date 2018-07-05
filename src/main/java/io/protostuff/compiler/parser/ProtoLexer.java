@@ -17,15 +17,15 @@ public class ProtoLexer extends Lexer {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		PACKAGE=1, SYNTAX=2, IMPORT=3, PUBLIC=4, OPTION=5, MESSAGE=6, GROUP=7,
-		OPTIONAL=8, REQUIRED=9, REPEATED=10, ONEOF=11, EXTEND=12, EXTENSIONS=13,
-		TO=14, MAX=15, RESERVED=16, ENUM=17, SERVICE=18, RPC=19, RETURNS=20, STREAM=21,
-		MAP=22, BOOLEAN_VALUE=23, DOUBLE=24, FLOAT=25, INT32=26, INT64=27, UINT32=28,
-		UINT64=29, SINT32=30, SINT64=31, FIXED32=32, FIXED64=33, SFIXED32=34,
-		SFIXED64=35, BOOL=36, STRING=37, BYTES=38, COMMENT=39, LINE_COMMENT=40,
-		PLUGIN_DEV_MARKER=41, NL=42, WS=43, LCURLY=44, RCURLY=45, LPAREN=46, RPAREN=47,
-		LSQUARE=48, RSQUARE=49, LT=50, GT=51, COMMA=52, DOT=53, COLON=54, SEMICOLON=55,
-		ASSIGN=56, IDENT=57, STRING_VALUE=58, INTEGER_VALUE=59, FLOAT_VALUE=60,
+		PACKAGE=1, SYNTAX=2, IMPORT=3, PUBLIC=4, OPTION=5, MESSAGE=6, GROUP=7, 
+		OPTIONAL=8, REQUIRED=9, REPEATED=10, ONEOF=11, EXTEND=12, EXTENSIONS=13, 
+		TO=14, MAX=15, RESERVED=16, ENUM=17, SERVICE=18, RPC=19, RETURNS=20, STREAM=21, 
+		MAP=22, BOOLEAN_VALUE=23, DOUBLE=24, FLOAT=25, INT32=26, INT64=27, UINT32=28, 
+		UINT64=29, SINT32=30, SINT64=31, FIXED32=32, FIXED64=33, SFIXED32=34, 
+		SFIXED64=35, BOOL=36, STRING=37, BYTES=38, COMMENT=39, LINE_COMMENT=40, 
+		PLUGIN_DEV_MARKER=41, NL=42, WS=43, LCURLY=44, RCURLY=45, LPAREN=46, RPAREN=47, 
+		LSQUARE=48, RSQUARE=49, LT=50, GT=51, COMMA=52, DOT=53, COLON=54, SEMICOLON=55, 
+		ASSIGN=56, IDENT=57, STRING_VALUE=58, INTEGER_VALUE=59, FLOAT_VALUE=60, 
 		ERRCHAR=61;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
@@ -36,39 +36,39 @@ public class ProtoLexer extends Lexer {
 	};
 
 	public static final String[] ruleNames = {
-		"PACKAGE", "SYNTAX", "IMPORT", "PUBLIC", "OPTION", "MESSAGE", "GROUP",
-		"OPTIONAL", "REQUIRED", "REPEATED", "ONEOF", "EXTEND", "EXTENSIONS", "TO",
-		"MAX", "RESERVED", "ENUM", "SERVICE", "RPC", "RETURNS", "STREAM", "MAP",
-		"BOOLEAN_VALUE", "DOUBLE", "FLOAT", "INT32", "INT64", "UINT32", "UINT64",
-		"SINT32", "SINT64", "FIXED32", "FIXED64", "SFIXED32", "SFIXED64", "BOOL",
-		"STRING", "BYTES", "COMMENT", "LINE_COMMENT", "PLUGIN_DEV_MARKER", "NL",
-		"WS", "LCURLY", "RCURLY", "LPAREN", "RPAREN", "LSQUARE", "RSQUARE", "LT",
-		"GT", "COMMA", "DOT", "COLON", "SEMICOLON", "ASSIGN", "IDENT", "STRING_VALUE",
-		"INTEGER_VALUE", "FLOAT_VALUE", "DOUBLE_QUOTE_STRING", "SINGLE_QUOTE_STRING",
-		"EXPONENT", "FLOAT_LIT", "INF", "NAN", "EXP", "DEC_VALUE", "HEX_VALUE",
-		"OCT_VALUE", "MINUS", "ALPHA", "DIGIT", "HEX_DIGIT", "OCT_DIGIT", "UNDERSCORE",
+		"PACKAGE", "SYNTAX", "IMPORT", "PUBLIC", "OPTION", "MESSAGE", "GROUP", 
+		"OPTIONAL", "REQUIRED", "REPEATED", "ONEOF", "EXTEND", "EXTENSIONS", "TO", 
+		"MAX", "RESERVED", "ENUM", "SERVICE", "RPC", "RETURNS", "STREAM", "MAP", 
+		"BOOLEAN_VALUE", "DOUBLE", "FLOAT", "INT32", "INT64", "UINT32", "UINT64", 
+		"SINT32", "SINT64", "FIXED32", "FIXED64", "SFIXED32", "SFIXED64", "BOOL", 
+		"STRING", "BYTES", "COMMENT", "LINE_COMMENT", "PLUGIN_DEV_MARKER", "NL", 
+		"WS", "LCURLY", "RCURLY", "LPAREN", "RPAREN", "LSQUARE", "RSQUARE", "LT", 
+		"GT", "COMMA", "DOT", "COLON", "SEMICOLON", "ASSIGN", "IDENT", "STRING_VALUE", 
+		"INTEGER_VALUE", "FLOAT_VALUE", "DOUBLE_QUOTE_STRING", "SINGLE_QUOTE_STRING", 
+		"EXPONENT", "FLOAT_LIT", "INF", "NAN", "EXP", "DEC_VALUE", "HEX_VALUE", 
+		"OCT_VALUE", "MINUS", "ALPHA", "DIGIT", "HEX_DIGIT", "OCT_DIGIT", "UNDERSCORE", 
 		"ESC_SEQ", "OCTAL_ESC", "UNICODE_ESC", "ERRCHAR"
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "'package'", "'syntax'", "'import'", "'public'", "'option'", "'message'",
-		"'group'", "'optional'", "'required'", "'repeated'", "'oneof'", "'extend'",
-		"'extensions'", "'to'", "'max'", "'reserved'", "'enum'", "'service'",
-		"'rpc'", "'returns'", "'stream'", "'map'", null, "'double'", "'float'",
-		"'int32'", "'int64'", "'uint32'", "'uint64'", "'sint32'", "'sint64'",
-		"'fixed32'", "'fixed64'", "'sfixed32'", "'sfixed64'", "'bool'", "'string'",
-		"'bytes'", null, null, null, null, null, "'{'", "'}'", "'('", "')'", "'['",
+		null, "'package'", "'syntax'", "'import'", "'public'", "'option'", "'message'", 
+		"'group'", "'optional'", "'required'", "'repeated'", "'oneof'", "'extend'", 
+		"'extensions'", "'to'", "'max'", "'reserved'", "'enum'", "'service'", 
+		"'rpc'", "'returns'", "'stream'", "'map'", null, "'double'", "'float'", 
+		"'int32'", "'int64'", "'uint32'", "'uint64'", "'sint32'", "'sint64'", 
+		"'fixed32'", "'fixed64'", "'sfixed32'", "'sfixed64'", "'bool'", "'string'", 
+		"'bytes'", null, null, null, null, null, "'{'", "'}'", "'('", "')'", "'['", 
 		"']'", "'<'", "'>'", "','", "'.'", "':'", "';'", "'='"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, "PACKAGE", "SYNTAX", "IMPORT", "PUBLIC", "OPTION", "MESSAGE", "GROUP",
-		"OPTIONAL", "REQUIRED", "REPEATED", "ONEOF", "EXTEND", "EXTENSIONS", "TO",
-		"MAX", "RESERVED", "ENUM", "SERVICE", "RPC", "RETURNS", "STREAM", "MAP",
-		"BOOLEAN_VALUE", "DOUBLE", "FLOAT", "INT32", "INT64", "UINT32", "UINT64",
-		"SINT32", "SINT64", "FIXED32", "FIXED64", "SFIXED32", "SFIXED64", "BOOL",
-		"STRING", "BYTES", "COMMENT", "LINE_COMMENT", "PLUGIN_DEV_MARKER", "NL",
-		"WS", "LCURLY", "RCURLY", "LPAREN", "RPAREN", "LSQUARE", "RSQUARE", "LT",
-		"GT", "COMMA", "DOT", "COLON", "SEMICOLON", "ASSIGN", "IDENT", "STRING_VALUE",
+		null, "PACKAGE", "SYNTAX", "IMPORT", "PUBLIC", "OPTION", "MESSAGE", "GROUP", 
+		"OPTIONAL", "REQUIRED", "REPEATED", "ONEOF", "EXTEND", "EXTENSIONS", "TO", 
+		"MAX", "RESERVED", "ENUM", "SERVICE", "RPC", "RETURNS", "STREAM", "MAP", 
+		"BOOLEAN_VALUE", "DOUBLE", "FLOAT", "INT32", "INT64", "UINT32", "UINT64", 
+		"SINT32", "SINT64", "FIXED32", "FIXED64", "SFIXED32", "SFIXED64", "BOOL", 
+		"STRING", "BYTES", "COMMENT", "LINE_COMMENT", "PLUGIN_DEV_MARKER", "NL", 
+		"WS", "LCURLY", "RCURLY", "LPAREN", "RPAREN", "LSQUARE", "RSQUARE", "LT", 
+		"GT", "COMMA", "DOT", "COLON", "SEMICOLON", "ASSIGN", "IDENT", "STRING_VALUE", 
 		"INTEGER_VALUE", "FLOAT_VALUE", "ERRCHAR"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
