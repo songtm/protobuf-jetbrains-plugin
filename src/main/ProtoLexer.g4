@@ -125,6 +125,7 @@ PLUGIN_DEV_MARKER
     // Non-protobuf.
     // Added for convenience of IntelliJ IDEA plugin development
     : ('<caret>'
+    | '[id=' DIGIT ']'
     | '<error ' .*? '>'
     | '</error>'
     | '<fold ' .*? '>'
